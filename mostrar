@@ -1,0 +1,14 @@
+void mostrar() {
+    if (cab == NULL) {
+        cout << "No hay pasajeros registrados." << endl;
+        return;
+    }
+
+    aux = cab;
+    while (aux != NULL) {
+        cout << "Nombre: " << aux->nombre 
+             << ", Documento: " << aux->documento 
+             << ", Destino: " << aux->destino << endl;
+        aux = aux->sig;
+    }
+}
