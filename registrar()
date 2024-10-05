@@ -1,0 +1,27 @@
+void registrar() {
+    aux = (pasajero *) malloc(sizeof(pasajero));
+    cout << "Nombre del pasajero: ";
+    cin >> aux->nombre;
+    cout << "Número de documento: ";
+    cin >> aux->documento;
+    cout << "Destino (1: La Bocana, 2: Piangüita, 3: Ladrilleros): ";
+    cin >> aux->destino;
+
+    // Validar destino
+    while (aux->destino < 1 || aux->destino > 3) {
+        cout << "Destino inválido. Ingrese nuevamente (1-3): ";
+        cin >> aux->destino;
+    }
+
+    aux->sig = NULL;
+
+    if (!cab) {
+        cab = aux; // Primer pasajero
+    } else {
+        pasajero *temp = cab;
+        while (temp->sig != NULL) {
+            temp = temp->sig; // Navegar hasta el final de la lista
+        }
+        temp->sig = aux; // Añadir nuevo pasajero
+    }
+}
