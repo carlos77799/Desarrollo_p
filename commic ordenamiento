@@ -1,0 +1,14 @@
+C:\mision>git log
+commit 3c223bd0f0d99a8303c06fca35cee3731b710987 (HEAD -> main)
+Author: carlos77799 <borrerojean12@gmail.com>
+Date:   Tue Oct 8 15:45:45 2024 -0500
+
+   Ordenamiento: organiza los pasajes por destino y luego por documento
+
+
+C:\mision>git log
+commit 7f456bd0f0d99a8303c06fca35cee3731b710 (HEAD -> main)
+Author: carlos77799 <borrerojean12@gmail.com>
+Date:   Tue Oct 8 16:45:45 2024 -0500
+
+ agregar validacion adicional para la entrada de pasajeros
